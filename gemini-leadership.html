@@ -89,10 +89,32 @@
                 </div>
             </div>
 
-            <!-- Step 2: Instructions -->
+            <!-- Step 2: Description -->
             <div class="step">
                 <div class="step-header">
                     <div class="step-number" style="background: var(--gemini-gradient);">2</div>
+                    <h2>Description</h2>
+                </div>
+                <div class="step-content">
+                    <p>Enter this description in the <strong>Description</strong> field to help users understand what your Gem does.</p>
+
+                    <div class="copy-block">
+                        <div class="copy-block-header">
+                            <span class="copy-block-label">Description</span>
+                            <button class="copy-btn" data-copy="description">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                                Copy
+                            </button>
+                        </div>
+                        <div class="copy-block-content" id="description">Provides EDC leadership with synthesized insights on staff distribution, organizational risk status, and helps draft policy-compliant communications.</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 3: Instructions -->
+            <div class="step">
+                <div class="step-header">
+                    <div class="step-number" style="background: var(--gemini-gradient);">3</div>
                     <h2>Instructions</h2>
                 </div>
                 <div class="step-content">
@@ -179,10 +201,29 @@ If you cannot answer a question or the data doesn't contain what's needed, say:
                 </div>
             </div>
 
-            <!-- Step 3: Knowledge Files -->
+            <!-- Step 4: Default Tool -->
             <div class="step">
                 <div class="step-header">
-                    <div class="step-number" style="background: var(--gemini-gradient);">3</div>
+                    <div class="step-number" style="background: var(--gemini-gradient);">4</div>
+                    <h2>Default Tool</h2>
+                </div>
+                <div class="step-content">
+                    <p>Leave the <strong>Default tool</strong> dropdown set to <strong>"No default tool"</strong> (this is the default).</p>
+
+                    <div class="info-callout">
+                        <div class="info-callout-header">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+                            About Default Tools
+                        </div>
+                        <p>This dropdown offers specialized capabilities like Deep Research, image generation, and Canvas. For this leadership dashboard assistant, the default conversational mode works best.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 5: Knowledge Files -->
+            <div class="step">
+                <div class="step-header">
+                    <div class="step-number" style="background: var(--gemini-gradient);">5</div>
                     <h2>Knowledge Files</h2>
                 </div>
                 <div class="step-content">
@@ -209,10 +250,10 @@ If you cannot answer a question or the data doesn't contain what's needed, say:
                 </div>
             </div>
 
-            <!-- Step 4: Test Your Gem -->
+            <!-- Step 6: Test Your Gem -->
             <div class="step">
                 <div class="step-header">
-                    <div class="step-number" style="background: var(--gemini-gradient);">4</div>
+                    <div class="step-number" style="background: var(--gemini-gradient);">6</div>
                     <h2>Test Your Gem</h2>
                 </div>
                 <div class="step-content">
