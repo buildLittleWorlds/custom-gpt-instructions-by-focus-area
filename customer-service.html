@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Service GPT Instructions | EDC of St. Charles County</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@400;500;600&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container top-bar-content">
+            <div class="top-bar-left">
+                <span>Economic Development Council of St. Charles County, Missouri</span>
+            </div>
+            <div class="top-bar-right">
+                <a href="tel:636-441-6880">(636) 441-6880</a>
+                <span class="divider">|</span>
+                <a href="mailto:info@edcscc.com">info@edcscc.com</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Navigation -->
+    <header class="main-header">
+        <div class="container header-content">
+            <div class="logo">
+                <a href="index.html">
+                    <div class="logo-text">
+                        <span class="logo-edc">EDC</span>
+                        <span class="logo-county">Custom GPT Workshop</span>
+                    </div>
+                </a>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="accounting.html">Accounting</a></li>
+                    <li><a href="customer-service.html" class="active">Customer Service</a></li>
+                    <li><a href="leadership.html">Leadership</a></li>
+                    <li><a href="sales.html">Sales</a></li>
+                </ul>
+            </nav>
+            <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Instructions Section -->
+    <section class="instructions-section">
+        <div class="container">
+            <div class="instructions-header">
+                <a href="index.html" class="back-link">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+                    Back to All Departments
+                </a>
+                <h1>Service Ticket Response Helper</h1>
+                <p>Assists EDC customer service staff with drafting professional responses to service tickets, analyzing ticket trends, and tracking SLA compliance. Upload your ticket data for personalized assistance.</p>
+            </div>
+
+            <!-- Step 1: Basic Setup -->
+            <div class="step">
+                <div class="step-header">
+                    <div class="step-number">1</div>
+                    <h2>Basic Setup</h2>
+                </div>
+                <div class="step-content">
+                    <p>In ChatGPT, go to <strong>Explore GPTs</strong> &gt; <strong>Create</strong>. Enter the following name and description.</p>
+
+                    <div class="copy-block">
+                        <div class="copy-block-header">
+                            <span class="copy-block-label">Name</span>
+                            <button class="copy-btn" data-copy="name">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                                Copy
+                            </button>
+                        </div>
+                        <div class="copy-block-content" id="name">Service Ticket Response Helper</div>
+                    </div>
+
+                    <div class="copy-block">
+                        <div class="copy-block-header">
+                            <span class="copy-block-label">Description</span>
+                            <button class="copy-btn" data-copy="description">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                                Copy
+                            </button>
+                        </div>
+                        <div class="copy-block-content" id="description">Assists EDC customer service staff with drafting professional responses to service tickets, analyzing ticket trends, and tracking SLA compliance. Upload your ticket data for personalized assistance.</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 2: Instructions -->
+            <div class="step">
+                <div class="step-header">
+                    <div class="step-number">2</div>
+                    <h2>Instructions</h2>
+                </div>
+                <div class="step-content">
+                    <p>Copy and paste this entire instruction block into the <strong>Instructions</strong> field.</p>
+
+                    <div class="copy-block">
+                        <div class="copy-block-header">
+                            <span class="copy-block-label">Instructions</span>
+                            <button class="copy-btn" data-copy="instructions">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                                Copy
+                            </button>
+                        </div>
+                        <div class="copy-block-content instructions-text" id="instructions">You are a customer service assistant for the Economic Development Council of St. Charles County. Your role is to help staff respond to service tickets professionally, analyze ticket patterns, and ensure SLA compliance.
+
+CAPABILITIES:
+1. Draft professional responses for different ticket categories
+2. Analyze open tickets by category, status, and assigned unit
+3. Identify SLA compliance issues (tickets past due date)
+4. Create escalation summaries for management
+5. Suggest response templates based on ticket type
+6. Track resolution patterns and identify trends
+
+DATA STRUCTURE:
+The service_tickets.csv file contains:
+- ticket_id: Unique identifier (TK00001 format)
+- category: Issue type (Network, Hardware, Software, Account, Other)
+- description: Brief issue description
+- sla_target: Due date/time for resolution
+- status: Current state (Open, In Progress, Resolved, Closed)
+- assigned_unit: Team handling ticket (UnitA, UnitB, UnitC)
+- resolution_notes: Current resolution status
+- user_id: Requester ID
+- timestamp: When ticket was created
+
+RESPONSE TONE:
+- Professional but warm
+- Solution-oriented
+- Clear and concise
+- Empathetic when appropriate
+- Avoid jargon unless talking to technical staff
+
+RESPONSE TEMPLATES BY CATEGORY:
+1. Network issues: Acknowledge impact, provide timeline, offer workaround
+2. Hardware issues: Confirm details, explain next steps, set expectations
+3. Software issues: Verify specifics, provide interim solution if available
+4. Account issues: Prioritize security, explain verification steps
+5. Other: Gather more information, route appropriately
+
+SLA ANALYSIS:
+- Compare sla_target to current date
+- Flag tickets past SLA as "overdue"
+- Identify patterns in overdue tickets by category or unit
+
+KNOWLEDGE FILE USAGE:
+- ALWAYS check the uploaded service_tickets.csv before responding to questions
+- Reference specific ticket IDs when discussing individual tickets
+- If information isn't found in the uploaded data, acknowledge this clearly
+
+LIMITATIONS:
+- You cannot update ticket status in real systems
+- You cannot access user personal information
+- Recommend supervisor review for sensitive escalations
+- This data is for training purposes only
+
+WHEN YOU CAN'T HELP:
+If you cannot answer a question or need real-time system access, say:
+"I can only work with the uploaded ticket data. For real-time ticket updates or system access, please contact EDC IT Support at (636) 441-6880 or info@edcscc.com."</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 3: Conversation Starters -->
+            <div class="step">
+                <div class="step-header">
+                    <div class="step-number">3</div>
+                    <h2>Conversation Starters</h2>
+                </div>
+                <div class="step-content">
+                    <p>Add these conversation starters to help users get started quickly.</p>
+
+                    <div class="starters-list">
+                        <div class="starter-item">
+                            <span class="starter-text">What can you help me with?</span>
+                            <button class="copy-btn" data-copy="starter1">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                                Copy
+                            </button>
+                        </div>
+                        <div class="starter-item">
+                            <span class="starter-text">Draft a response for a network outage ticket...</span>
+                            <button class="copy-btn" data-copy="starter2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                                Copy
+                            </button>
+                        </div>
+                        <div class="starter-item">
+                            <span class="starter-text">Which tickets are past their SLA deadline?</span>
+                            <button class="copy-btn" data-copy="starter3">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                                Copy
+                            </button>
+                        </div>
+                        <div class="starter-item">
+                            <span class="starter-text">Create an escalation summary for management</span>
+                            <button class="copy-btn" data-copy="starter4">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                                Copy
+                            </button>
+                        </div>
+                    </div>
+                    <input type="hidden" id="starter1" value="What can you help me with?">
+                    <input type="hidden" id="starter2" value="Draft a response for a network outage ticket...">
+                    <input type="hidden" id="starter3" value="Which tickets are past their SLA deadline?">
+                    <input type="hidden" id="starter4" value="Create an escalation summary for management">
+                </div>
+            </div>
+
+            <!-- Step 4: Knowledge Files -->
+            <div class="step">
+                <div class="step-header">
+                    <div class="step-number">4</div>
+                    <h2>Knowledge Files</h2>
+                </div>
+                <div class="step-content">
+                    <p>Upload the following file from the Dummy Data folder provided during the workshop.</p>
+
+                    <div class="file-callout">
+                        <div class="file-callout-header">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+                            Upload This File
+                        </div>
+                        <ul>
+                            <li>Dummy Data/Excel Documents/service_tickets.csv</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 5: Capabilities -->
+            <div class="step">
+                <div class="step-header">
+                    <div class="step-number">5</div>
+                    <h2>Capabilities</h2>
+                </div>
+                <div class="step-content">
+                    <p>Set the following capability toggles in your Custom GPT settings.</p>
+
+                    <table class="capabilities-table">
+                        <thead>
+                            <tr>
+                                <th>Capability</th>
+                                <th>Setting</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Web Browsing</td>
+                                <td><span class="toggle-off">OFF</span></td>
+                            </tr>
+                            <tr>
+                                <td>DALL-E Image Generation</td>
+                                <td><span class="toggle-off">OFF</span></td>
+                            </tr>
+                            <tr>
+                                <td>Code Interpreter & Data Analysis</td>
+                                <td><span class="toggle-on">ON</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <p style="margin-top: var(--space-md); font-style: italic; color: var(--medium-gray);">Code Interpreter is required for analyzing ticket data and calculating SLA metrics.</p>
+                </div>
+            </div>
+
+            <!-- Step 6: Test Your GPT -->
+            <div class="step">
+                <div class="step-header">
+                    <div class="step-number">6</div>
+                    <h2>Test Your GPT</h2>
+                </div>
+                <div class="step-content">
+                    <p>After creating your GPT, test it with these prompts to make sure everything works correctly.</p>
+
+                    <div class="testing-prompts">
+                        <div class="testing-prompt">
+                            <span class="testing-prompt-number">1.</span>
+                            <span class="testing-prompt-text">"How many tickets are currently open?"</span>
+                        </div>
+                        <div class="testing-prompt">
+                            <span class="testing-prompt-number">2.</span>
+                            <span class="testing-prompt-text">"Draft a professional response for ticket TK00003 about a network outage"</span>
+                        </div>
+                        <div class="testing-prompt">
+                            <span class="testing-prompt-number">3.</span>
+                            <span class="testing-prompt-text">"Which tickets are past their SLA deadline?"</span>
+                        </div>
+                        <div class="testing-prompt">
+                            <span class="testing-prompt-number">4.</span>
+                            <span class="testing-prompt-text">"Show me ticket distribution by category"</span>
+                        </div>
+                        <div class="testing-prompt">
+                            <span class="testing-prompt-number">5.</span>
+                            <span class="testing-prompt-text">"What's the workload distribution across units?"</span>
+                        </div>
+                        <div class="testing-prompt">
+                            <span class="testing-prompt-number">6.</span>
+                            <span class="testing-prompt-text">"Create an escalation summary for all tickets marked 'Escalated'"</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container footer-content">
+            <p>&copy; 2026 Economic Development Council of St. Charles County. All rights reserved.</p>
+            <p class="demo-notice">This is a demonstration website for AI training purposes.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.querySelector('.mobile-menu-toggle').addEventListener('click', function() {
+            document.querySelector('.main-nav').classList.toggle('active');
+            this.classList.toggle('active');
+        });
+
+        // Copy to clipboard functionality
+        document.querySelectorAll('.copy-btn').forEach(button => {
+            button.addEventListener('click', function() {
+                const targetId = this.getAttribute('data-copy');
+                const targetElement = document.getElementById(targetId);
+
+                let textToCopy;
+                if (targetElement.tagName === 'INPUT') {
+                    textToCopy = targetElement.value;
+                } else {
+                    textToCopy = targetElement.textContent;
+                }
+
+                navigator.clipboard.writeText(textToCopy).then(() => {
+                    // Show copied state
+                    const originalHTML = this.innerHTML;
+                    this.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg> Copied!';
+                    this.classList.add('copied');
+
+                    setTimeout(() => {
+                        this.innerHTML = originalHTML;
+                        this.classList.remove('copied');
+                    }, 2000);
+                });
+            });
+        });
+    </script>
+</body>
+</html>
