@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sales GPT Instructions | EDC of St. Charles County</title>
+    <title>Sales Gem Instructions | EDC of St. Charles County</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@400;500;600&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
@@ -38,7 +38,7 @@
             <nav class="main-nav">
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="gemini-getting-started.html">Gemini Gems</a></li>
+                    <li><a href="gemini-getting-started.html" class="active">Gemini Gems</a></li>
                 </ul>
             </nav>
             <button class="mobile-menu-toggle" aria-label="Toggle menu">
@@ -53,22 +53,28 @@
     <section class="instructions-section">
         <div class="container">
             <div class="instructions-header">
-                <a href="index.html" class="back-link">
+                <a href="gemini-getting-started.html" class="back-link">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
-                    Back to All Departments
+                    Back to Gemini Gems
                 </a>
+                <div style="display: flex; align-items: center; gap: var(--space-md); margin-bottom: var(--space-md);">
+                    <span class="gemini-badge">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                        Gemini Gem
+                    </span>
+                </div>
                 <h1>EDC Outreach & Communications Assistant</h1>
                 <p>Helps EDC sales and marketing staff draft outreach emails, social media posts, press releases, and review vendor contracts. Uses communications calendar and contract documents to ensure accurate, timely content.</p>
             </div>
 
-            <!-- Step 1: Basic Setup -->
+            <!-- Step 1: Name -->
             <div class="step">
                 <div class="step-header">
-                    <div class="step-number">1</div>
-                    <h2>Basic Setup</h2>
+                    <div class="step-number" style="background: var(--gemini-gradient);">1</div>
+                    <h2>Name Your Gem</h2>
                 </div>
                 <div class="step-content">
-                    <p>In ChatGPT, go to <strong>Explore GPTs</strong> &gt; <strong>Create</strong>. Enter the following name and description.</p>
+                    <p>In the Gem builder, enter the following name in the <strong>Name</strong> field.</p>
 
                     <div class="copy-block">
                         <div class="copy-block-header">
@@ -80,28 +86,18 @@
                         </div>
                         <div class="copy-block-content" id="name">EDC Outreach & Communications Assistant</div>
                     </div>
-
-                    <div class="copy-block">
-                        <div class="copy-block-header">
-                            <span class="copy-block-label">Description</span>
-                            <button class="copy-btn" data-copy="description">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
-                                Copy
-                            </button>
-                        </div>
-                        <div class="copy-block-content" id="description">Helps EDC sales and marketing staff draft outreach emails, social media posts, press releases, and review vendor contracts. Uses communications calendar and contract documents to ensure accurate, timely content.</div>
-                    </div>
                 </div>
             </div>
 
             <!-- Step 2: Instructions -->
             <div class="step">
                 <div class="step-header">
-                    <div class="step-number">2</div>
+                    <div class="step-number" style="background: var(--gemini-gradient);">2</div>
                     <h2>Instructions</h2>
                 </div>
                 <div class="step-content">
                     <p>Copy and paste this entire instruction block into the <strong>Instructions</strong> field.</p>
+                    <p style="margin-top: var(--space-sm); font-style: italic; color: var(--medium-gray);">Tip: After pasting, you can click the sparkly pencil icon to let Gemini help expand your instructions.</p>
 
                     <div class="copy-block">
                         <div class="copy-block-header">
@@ -193,60 +189,22 @@ If you cannot answer a question or need information not in the uploaded files, s
                 </div>
             </div>
 
-            <!-- Step 3: Conversation Starters -->
+            <!-- Step 3: Knowledge Files -->
             <div class="step">
                 <div class="step-header">
-                    <div class="step-number">3</div>
-                    <h2>Conversation Starters</h2>
-                </div>
-                <div class="step-content">
-                    <p>Add these conversation starters to help users get started quickly.</p>
-
-                    <div class="starters-list">
-                        <div class="starter-item">
-                            <span class="starter-text">What can you help me with?</span>
-                            <button class="copy-btn" data-copy="starter1">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
-                                Copy
-                            </button>
-                        </div>
-                        <div class="starter-item">
-                            <span class="starter-text">Draft an outreach email to a prospective business...</span>
-                            <button class="copy-btn" data-copy="starter2">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
-                                Copy
-                            </button>
-                        </div>
-                        <div class="starter-item">
-                            <span class="starter-text">What events are coming up this month?</span>
-                            <button class="copy-btn" data-copy="starter3">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
-                                Copy
-                            </button>
-                        </div>
-                        <div class="starter-item">
-                            <span class="starter-text">Summarize the key terms in the Acme contract</span>
-                            <button class="copy-btn" data-copy="starter4">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
-                                Copy
-                            </button>
-                        </div>
-                    </div>
-                    <input type="hidden" id="starter1" value="What can you help me with?">
-                    <input type="hidden" id="starter2" value="Draft an outreach email to a prospective business...">
-                    <input type="hidden" id="starter3" value="What events are coming up this month?">
-                    <input type="hidden" id="starter4" value="Summarize the key terms in the Acme contract">
-                </div>
-            </div>
-
-            <!-- Step 4: Knowledge Files -->
-            <div class="step">
-                <div class="step-header">
-                    <div class="step-number">4</div>
+                    <div class="step-number" style="background: var(--gemini-gradient);">3</div>
                     <h2>Knowledge Files</h2>
                 </div>
                 <div class="step-content">
-                    <p>Upload the following files from the Dummy Data folder provided during the workshop.</p>
+                    <p>Click the <strong>file icon</strong> in the Gem builder to upload the following files from the Dummy Data folder provided during the workshop.</p>
+
+                    <div class="info-callout">
+                        <div class="info-callout-header">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+                            Gemini File Limit
+                        </div>
+                        <p>Gemini Gems support up to <strong>10 files</strong> maximum. This Gem needs 4 files.</p>
+                    </div>
 
                     <div class="file-callout">
                         <div class="file-callout-header">
@@ -263,50 +221,14 @@ If you cannot answer a question or need information not in the uploaded files, s
                 </div>
             </div>
 
-            <!-- Step 5: Capabilities -->
+            <!-- Step 4: Test Your Gem -->
             <div class="step">
                 <div class="step-header">
-                    <div class="step-number">5</div>
-                    <h2>Capabilities</h2>
+                    <div class="step-number" style="background: var(--gemini-gradient);">4</div>
+                    <h2>Test Your Gem</h2>
                 </div>
                 <div class="step-content">
-                    <p>Set the following capability toggles in your Custom GPT settings.</p>
-
-                    <table class="capabilities-table">
-                        <thead>
-                            <tr>
-                                <th>Capability</th>
-                                <th>Setting</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Web Browsing</td>
-                                <td><span class="toggle-off">OFF</span></td>
-                            </tr>
-                            <tr>
-                                <td>DALL-E Image Generation</td>
-                                <td><span class="toggle-off">OFF</span></td>
-                            </tr>
-                            <tr>
-                                <td>Code Interpreter & Data Analysis</td>
-                                <td><span class="toggle-on">ON</span></td>
-                            </tr>
-                        </tbody>
-                    </table>
-
-                    <p style="margin-top: var(--space-md); font-style: italic; color: var(--medium-gray);">Code Interpreter is required for analyzing the communications calendar and extracting information from uploaded documents.</p>
-                </div>
-            </div>
-
-            <!-- Step 6: Test Your GPT -->
-            <div class="step">
-                <div class="step-header">
-                    <div class="step-number">6</div>
-                    <h2>Test Your GPT</h2>
-                </div>
-                <div class="step-content">
-                    <p>After creating your GPT, test it with these prompts to make sure everything works correctly.</p>
+                    <p>Use the <strong>Preview pane</strong> on the right side of the Gem builder to test your Gem before saving. Try these prompts:</p>
 
                     <div class="testing-prompts">
                         <div class="testing-prompt">
@@ -338,6 +260,8 @@ If you cannot answer a question or need information not in the uploaded files, s
                             <span class="testing-prompt-text">"Draft a partnership announcement template I can customize"</span>
                         </div>
                     </div>
+
+                    <p style="margin-top: var(--space-lg);">Once you're satisfied with the results, click <strong>Save</strong> to create your Gem.</p>
                 </div>
             </div>
 

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Custom GPT Instructions by Focus Area | EDC of St. Charles County</title>
+    <title>AI Assistant Workshop | EDC of St. Charles County</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@400;500;600&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
@@ -31,16 +31,14 @@
                 <a href="index.html">
                     <div class="logo-text">
                         <span class="logo-edc">EDC</span>
-                        <span class="logo-county">Custom GPT Workshop</span>
+                        <span class="logo-county">AI Assistant Workshop</span>
                     </div>
                 </a>
             </div>
             <nav class="main-nav">
                 <ul>
-                    <li><a href="accounting.html">Accounting</a></li>
-                    <li><a href="customer-service.html">Customer Service</a></li>
-                    <li><a href="leadership.html">Leadership</a></li>
-                    <li><a href="sales.html">Sales</a></li>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="gemini-getting-started.html">Gemini Gems</a></li>
                 </ul>
             </nav>
             <button class="mobile-menu-toggle" aria-label="Toggle menu">
@@ -58,18 +56,52 @@
         </div>
         <div class="container hero-content">
             <div class="hero-text">
-                <h1>Build Your Own<br><span class="highlight">Custom GPT</span></h1>
-                <p class="hero-subtitle">Follow step-by-step instructions to create AI assistants tailored to your department's needs. Each guide includes everything you need to build and test your GPT.</p>
+                <h1>Build Your Own<br><span class="highlight">AI Assistant</span></h1>
+                <p class="hero-subtitle">Create custom AI assistants tailored to your department's needs using ChatGPT or Google Gemini. Choose your platform below to get started.</p>
             </div>
         </div>
     </section>
 
-    <!-- Departments Section -->
-    <section class="departments-section">
+    <!-- Platform Selection Section -->
+    <section class="platform-section">
         <div class="container">
             <div class="section-header">
-                <span class="section-tag">Choose Your Department</span>
-                <h2>Department-Specific Custom GPTs</h2>
+                <span class="section-tag">Step 1</span>
+                <h2>Choose Your Platform</h2>
+                <p>Select the AI platform you'd like to use. Both platforms let you create custom assistants with uploaded files and tailored instructions.</p>
+            </div>
+            <div class="platform-grid">
+                <!-- ChatGPT Card -->
+                <a href="#chatgpt-departments" class="platform-card chatgpt">
+                    <div class="platform-icon chatgpt">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+                    </div>
+                    <h3>ChatGPT</h3>
+                    <p class="platform-subtitle">Custom GPTs</p>
+                    <span class="platform-cost paid">$20/month (ChatGPT Plus)</span>
+                    <span class="platform-link">View Instructions <span>&rarr;</span></span>
+                </a>
+
+                <!-- Gemini Card -->
+                <a href="gemini-getting-started.html" class="platform-card gemini">
+                    <div class="platform-icon gemini">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                    </div>
+                    <h3>Google Gemini</h3>
+                    <p class="platform-subtitle">Gems</p>
+                    <span class="platform-cost free">FREE with Google Account</span>
+                    <span class="platform-link">View Instructions <span>&rarr;</span></span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ChatGPT Departments Section -->
+    <section id="chatgpt-departments" class="departments-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">ChatGPT Custom GPTs</span>
+                <h2>Choose Your Department</h2>
                 <p>Select your department below to access step-by-step instructions for building a Custom GPT designed for your team's workflow.</p>
             </div>
             <div class="departments-grid">

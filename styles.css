@@ -11,6 +11,12 @@
     --accent-gold: #c9a227;
     --accent-gold-light: #d4b84a;
 
+    /* Gemini Colors */
+    --gemini-blue: #4285F4;
+    --gemini-purple: #8E44AD;
+    --gemini-purple-light: #A569BD;
+    --gemini-gradient: linear-gradient(135deg, #4285F4 0%, #8E44AD 100%);
+
     /* Neutral Colors */
     --white: #ffffff;
     --off-white: #f8f9fa;
@@ -811,11 +817,225 @@ h4 { font-size: 1.25rem; }
 }
 
 /* ============================================
+   Platform Selection Styles
+   ============================================ */
+
+.platform-section {
+    padding: var(--space-3xl) 0;
+    background-color: var(--white);
+}
+
+.platform-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-xl);
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.platform-card {
+    background-color: var(--white);
+    border-radius: var(--radius-lg);
+    padding: var(--space-2xl);
+    box-shadow: var(--shadow-md);
+    transition: all var(--transition-base);
+    border: 2px solid var(--light-gray);
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.platform-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-xl);
+}
+
+.platform-card.chatgpt:hover {
+    border-color: var(--accent-gold);
+}
+
+.platform-card.gemini:hover {
+    border-color: var(--gemini-purple);
+}
+
+.platform-icon {
+    width: 80px;
+    height: 80px;
+    border-radius: var(--radius-lg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    margin-bottom: var(--space-lg);
+    font-size: 2rem;
+}
+
+.platform-icon.chatgpt {
+    background: linear-gradient(135deg, var(--accent-gold) 0%, var(--accent-gold-light) 100%);
+}
+
+.platform-icon.gemini {
+    background: var(--gemini-gradient);
+}
+
+.platform-card h3 {
+    color: var(--text-dark);
+    margin-bottom: var(--space-sm);
+    font-size: 1.5rem;
+}
+
+.platform-card .platform-subtitle {
+    color: var(--medium-gray);
+    font-size: 0.9375rem;
+    margin-bottom: var(--space-md);
+}
+
+.platform-card .platform-cost {
+    font-family: var(--font-heading);
+    font-weight: 600;
+    padding: var(--space-xs) var(--space-md);
+    border-radius: var(--radius-sm);
+    font-size: 0.875rem;
+    margin-bottom: var(--space-lg);
+}
+
+.platform-cost.paid {
+    background-color: #fff3cd;
+    color: #856404;
+}
+
+.platform-cost.free {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.platform-card .platform-link {
+    font-family: var(--font-heading);
+    font-weight: 600;
+    font-size: 1rem;
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-xs);
+}
+
+.platform-card.chatgpt .platform-link {
+    color: var(--accent-gold);
+}
+
+.platform-card.gemini .platform-link {
+    color: var(--gemini-purple);
+}
+
+.platform-link span {
+    transition: transform var(--transition-fast);
+}
+
+.platform-card:hover .platform-link span {
+    transform: translateX(4px);
+}
+
+/* Gemini-specific styles */
+.gemini-hero {
+    background: var(--gemini-gradient);
+}
+
+.gemini-hero .hero-background {
+    background: var(--gemini-gradient);
+}
+
+.gemini-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-xs);
+    background: var(--gemini-gradient);
+    color: var(--white);
+    padding: var(--space-xs) var(--space-sm);
+    border-radius: var(--radius-sm);
+    font-family: var(--font-heading);
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.gemini-step-number {
+    background: var(--gemini-gradient);
+}
+
+/* Gemini department cards */
+.department-card.gemini-card:hover {
+    border-color: var(--gemini-purple);
+}
+
+.department-card.gemini-card .department-icon {
+    background: var(--gemini-gradient);
+}
+
+.department-card.gemini-card .department-link {
+    color: var(--gemini-purple);
+}
+
+.department-card.gemini-card:hover .department-link {
+    color: var(--gemini-blue);
+}
+
+/* Info callout for Gemini notes */
+.info-callout {
+    background-color: #e8f4fd;
+    border: 1px solid #b8daff;
+    border-left: 4px solid var(--gemini-blue);
+    border-radius: var(--radius-md);
+    padding: var(--space-md);
+    margin-bottom: var(--space-lg);
+}
+
+.info-callout-header {
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+    font-family: var(--font-heading);
+    font-weight: 600;
+    color: var(--gemini-blue);
+    margin-bottom: var(--space-sm);
+}
+
+.info-callout p {
+    color: var(--text-dark);
+    margin: 0;
+}
+
+/* Free badge highlight */
+.free-highlight {
+    background: linear-gradient(135deg, #d4edda 0%, #c3e6cb 100%);
+    border: 2px solid #28a745;
+    border-radius: var(--radius-md);
+    padding: var(--space-lg);
+    text-align: center;
+    margin-bottom: var(--space-xl);
+}
+
+.free-highlight h3 {
+    color: #155724;
+    margin-bottom: var(--space-sm);
+}
+
+.free-highlight p {
+    color: #155724;
+    margin: 0;
+}
+
+/* ============================================
    Responsive Design
    ============================================ */
 
 @media (max-width: 1024px) {
     .departments-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .platform-grid {
         grid-template-columns: 1fr;
     }
 }
